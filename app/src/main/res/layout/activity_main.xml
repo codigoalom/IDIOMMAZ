@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45ACFA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/speechtotextTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="IDIOMMAZ"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/showtexttolearnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speechtotextTextView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerimageImageView"
+        android:layout_below="@id/showtexttolearnTextView"
+        android:layout_above="@id/speedTextView"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speedTextView"
+        android:layout_above="@id/speedSeekbr"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Voice Speed"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+         />
+
+    <SeekBar
+        android:id="@+id/speedSeekbr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:progress="50"
+        android:layout_above="@id/pitchTxtView"/>
+
+    <TextView
+        android:id="@+id/pitchTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Voice Pitch"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:textSize="18dp"
+        android:layout_above="@id/pitchSeekbr" />
+
+    <SeekBar
+        android:id="@+id/pitchSeekbr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:progress="50"
+        android:layout_above="@id/progressbarTxtview"/>
+
+    <TextView
+        android:id="@+id/progressbarTxtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Lesson Progress"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:textSize="18dp"
+        android:layout_above="@id/lessonprogressBar" />
+
+    <ProgressBar
+        android:id="@+id/lessonprogressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_above="@id/bottom_lienar_layout" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/bottom_lienar_layout">
+
+        <Button
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:id="@+id/comenzarButton"
+            android:background="@drawable/round_buttons"
+            android:text="Comenzar"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:layout_toLeftOf="@id/volveraescucharButton"
+            android:layout_above="@id/mostrartextoButton"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"/>
+
+        <Button
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:id="@+id/volveraescucharButton"
+            android:text="Volver a Escuchar"
+            android:textSize="14dp"
+            android:background="@drawable/round_buttons"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:layout_toLeftOf="@id/miturnoButton"
+            android:layout_above="@id/traducirButton"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/miturnoButton"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_above="@id/regresarButton"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@id/continuarButton"
+            android:background="@drawable/round_buttons"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:onClick="getSpeechInput"
+            android:text="Mi Turno"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/continuarButton"
+            android:text="Continuar"
+            android:textSize="16dp"
+            android:background="@drawable/round_buttons"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/terminarButton"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/mostrartextoButton"
+            android:text="Mostrar Texto"
+            android:textSize="15dp"
+            android:background="@drawable/round_buttons"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/traducirButton"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="2dp"/>
+
+        <Button
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:id="@+id/traducirButton"
+            android:text="Traducir"
+            android:textSize="15dp"
+            android:background="@drawable/round_buttons"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:layout_toLeftOf="@id/regresarButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/regresarButton"
+            android:text="Regresar"
+            android:textSize="15dp"
+            android:background="@drawable/round_buttons"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:layout_toLeftOf="@id/terminarButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="4dp"/>
+
+        <Button
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:id="@+id/terminarButton"
+            android:text="Terminar"
+            android:textSize="17dp"
+            android:background="@drawable/round_buttons"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="4dp"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#45ACFA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escriba su nombre para comenzar"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:textColor="#ffffff"
+        android:textSize="19dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entrarnombreEditTtext"
+        android:hint="Nombre..."
+        android:textColor="#ffffff"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:textSize="26dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:id="@+id/continuardialogButton"
+        android:background="@drawable/round_buttons"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:textSize="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        android:paddingHorizontal="42dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
