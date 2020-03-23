@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alom.idiommaz.ui.AdminActivity"
+    android:orientation="vertical"
+    android:background="#45ACFA">
+
+    <TextView
+        android:id="@+id/applabelinadminTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="IDIOMMAZ"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/inicioTextView"
+                android:text="Ir a Inicio"
+                android:fontFamily="@font/annie_use_your_telescope"
+                style="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminusuariosTextView"
+                android:text="Administrar Usuario"
+                android:fontFamily="@font/annie_use_your_telescope"
+                style="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminnivelesTextView"
+                android:text="Administrar Niveles"
+                android:fontFamily="@font/annie_use_your_telescope"
+                style="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminleccionesTextView"
+                android:text="Administrar Lecciones"
+                android:fontFamily="@font/annie_use_your_telescope"
+                style="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminexpresionesTextView"
+                android:text="Administrar Expresiones"
+                android:fontFamily="@font/annie_use_your_telescope"
+                style="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminimagenesTextView"
+                android:text="Administrar Imágenes"
+                android:fontFamily="@font/annie_use_your_telescope"
+                style="@style/Widget.AppCompat.Light.ActionButton.Overflow"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

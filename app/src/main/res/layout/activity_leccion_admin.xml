@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45ACFA"
+    tools:context="com.alom.idiommaz.ui.LeccionAdminActivity">
+
+    <TextView
+        android:id="@+id/appnameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="IDIOMMAZ"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appnameTextView"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/entrarleccionEditText"
+            android:textColor="#ffffff"
+            android:hint="@string/edttxt_lecc_hint"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginVertical="7dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/entrarnivelEditText"
+            android:textColor="#ffffff"
+            android:hint="@string/edttxt_niv_hint"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginVertical="7dp"
+            android:layout_toRightOf="@id/entrarleccionEditText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guardarleccionButton"
+            android:text="Guardar Lección"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_marginLeft="70dp"
+            android:layout_marginVertical="7dp"
+            android:layout_below="@id/entrarleccionEditText"
+            android:paddingHorizontal="15dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mostrartodosleccionesButton"
+            android:text="Mostrar Todas Lecciones"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/guardarleccionButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mostrarleccionxnombreButton"
+            android:text="Mostrar Lecciones por Nombre"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/guardarleccionButton"
+            android:layout_toRightOf="@id/mostrartodosleccionesButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mostrarleccionxidButton"
+            android:text="Mostrar Lecciones por ID"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/mostrartodosleccionesButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/actualizarleccionxidButton"
+            android:text="Actualizar Lecciones por ID"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/mostrarleccionxnombreButton"
+            android:layout_toRightOf="@id/mostrarleccionxidButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/borrarleccionxidButton"
+            android:text="Borrar Lecciones por ID"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/mostrarleccionxidButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/borraleccionestodosButton"
+            android:text="Borrar todas las Lecciones"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/mostrarleccionxidButton"
+            android:layout_toRightOf="@id/borrarleccionxidButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/iraadminTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/borrarleccionxidButton"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/admin_label"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</RelativeLayout>

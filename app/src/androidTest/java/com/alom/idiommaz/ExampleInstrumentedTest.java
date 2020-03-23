@@ -1,4 +1,4 @@
-package com.alm.idiommaz220;
+package com.alom.idiommaz;
 
 import android.content.Context;
 

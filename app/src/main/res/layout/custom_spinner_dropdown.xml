@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text1"
+    style="?attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:textColor="#0C8EF7"
+    android:textStyle="bold"
+    android:textSize="25dp"
+    android:fontFamily="@font/annie_use_your_telescope"
+    android:background="@android:color/white"
+    android:textAlignment="center"
+    android:hint="Make a Selection"
+    android:textColorHint="#0C8EF7"
+    />

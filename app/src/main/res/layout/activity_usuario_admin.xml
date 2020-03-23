@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UsuarioAdminActivity"
+    android:background="#45ACFA">
+
+    <TextView
+        android:id="@+id/appnameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="IDIOMMAZ"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appnameTextView"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/entrarnomadminEditText"
+            android:textColor="#ffffff"
+            android:hint="@string/edttxt_usr_hint"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColorHint="#ffffff"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guardarusuarioButton"
+            android:text="Guardar Usuario"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_marginLeft="35dp"
+            android:layout_marginVertical="7dp"
+            android:layout_toRightOf="@id/entrarnomadminEditText"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mostrartodosusuariosButton"
+            android:text="Mostrar Todos Usuarios"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/entrarnomadminEditText"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mostrarusrxnombreButton"
+            android:text="Mostrar Usuarios por Nombre"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/guardarusuarioButton"
+            android:layout_toRightOf="@id/mostrartodosusuariosButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mostrarusrxidButton"
+            android:text="Mostrar Usuarios por ID"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/mostrartodosusuariosButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/actualizarxidButton"
+            android:text="Actualizar Usuarios por ID"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/mostrarusrxnombreButton"
+            android:layout_toRightOf="@id/mostrarusrxidButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/borrarusrxidButton"
+            android:text="Borrar Usuarios por ID"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/mostrarusrxidButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/borrausrtodosButton"
+            android:text="Borrar todos los Usuarios"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:textColor="#ffffff"
+            android:background="@drawable/round_buttons"
+            android:layout_margin="5dp"
+            android:layout_below="@id/mostrarusrxidButton"
+            android:layout_toRightOf="@id/borrarusrxidButton"
+            android:paddingHorizontal="14dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/iraadminTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/borrarusrxidButton"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/admin_label"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>

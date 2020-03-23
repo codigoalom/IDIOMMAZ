@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45ACFA"
+    tools:context="com.alom.idiommaz.ui.NivelAdminActivity">
+
+    <TextView
+        android:id="@+id/appnameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="IDIOMMAZ"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/appnameTextView"
+    android:scrollbars="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nivadminTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="Administrar Niveles"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/managelevelSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:background="@drawable/soft_corners"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/nivadminTextView"
+                android:layout_centerHorizontal="true"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="0dp"
+                />
+
+            <TextView
+                android:id="@+id/leccionesdenivTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:layout_below="@id/managelevelSpinner"
+                android:layout_marginBottom="5dp"
+                android:scrollbars="vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leccionesdenivTextView"
+                android:layout_centerHorizontal="true"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/guardarnivelButton"
+                    android:text="Guardar Nivel"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/soft_corners"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingHorizontal="9dp"
+                    android:textStyle="bold"
+                    android:layout_toLeftOf="@id/separadorTextView"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/separadorTextView"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/borranivelxnombreButton"
+                    android:text="Borrar Nivel"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/soft_corners"
+                    android:paddingHorizontal="9dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/separadorTextView"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:id="@+id/borranivelestodosButton"
+                    android:text="Borrar todos los Niveles"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/soft_corners"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/borranivelxnombreButton"
+                    android:layout_centerHorizontal="true"
+                    android:paddingHorizontal="9dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/iraadminTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/admin_label"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_below="@id/borranivelestodosButton"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

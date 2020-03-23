@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">IDIOMMAZ 2.20</string>
+    <string name="app_name">IDIOMMAZ</string>
+    <string name="admin_label"><b><u><big>Ir a Admin</big></u></b></string>
+    <string name="admin_usr"><u>Administrar Usuarios</u></string>
+    <string name="admin_niv"><u>Administrar Niveles</u></string>
+    <string name="admin_expresion"><u>Administrar Expresiones</u></string>
+    <string name="admin_imagen"><u>Administrar Imágenes</u></string>
+    <string name="edttxt_usr_hint"><b>Nombre de usuario</b></string>
+    <string name="edttxt_niv_hint"><b>Escriba un nivel</b></string>
+    <string name="edttxt_lecc_hint"><b>Escriba una lección</b></string>
 </resources>
